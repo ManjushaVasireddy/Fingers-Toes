@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Fingers & Toes</title>
-     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="style1.css">
    
-
+<script src="FingerToesScript.js"></script>
  </head>
 <body style="background-color:#D4C9C7;">
 <div id="heading">
@@ -15,13 +15,13 @@
    
    <div id="input_box">
        <label>Enter Seconds Needed:</label>
-       <input type="number" id="input">
-       <button id="reset">Reset</button>
-       <button id="restart">Restart</button>
+       <input type="number" id="input" onchange="counter()">
+       <button id="reset" onclick="reset()">Reset</button>
+       <button id="restart" onclick="restart()">Restart</button>
        <div id="counter_box">0</div>
       
     </div>
-    <div class="word_box" >Fingers</div>
+    <div class="word_box" id="finger">Fingers</div>
     
     
 </body>
