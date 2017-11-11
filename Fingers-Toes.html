@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Fingers & Toes</title>
-     <link rel="stylesheet" type="text/css" href="style1.css">
-   
-<script src="FingerToesScript.js"></script>
- </head>
-<body style="background-color:#D4C9C7;">
-<div id="heading">
-    
-    <h1>Fingers & Toes</h1>
-    </div>
-   
-   <div id="input_box">
-       <label>Enter Seconds Needed:</label>
-       <input type="number" id="input" onchange="counter()">
-       <button id="reset" onclick="reset()">Reset</button>
-       <button id="restart" onclick="restart()">Restart</button>
-       <div id="counter_box">0</div>
-      
-    </div>
-    <div class="word_box" id="finger">Fingers</div>
-    
-    
-</body>
-   
- 
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Fingers & Toes</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="FingerToesScript.js"></script>
+   </head>
+   <body style="background-color:#D4C9C7;">
+      <div id="heading">
+         <h1>Fingers & Toes</h1>
+      </div>
+      <div class="wrapper">
+         <div id="input_box">
+            <label>Enter Seconds Needed:</label>
+            <input type="number" id="input" onkeypress="counterFunction(event)" placeholder="Enter Number and Press Enter">
+            <button id="reset" onclick="reset()" type="reset">Reset</button>
+            <button id="restart" onclick="restart()">Restart</button>
+            <div id="counter_box">0</div>
+         </div>
+         <div class="box_wrapper">
+            <div class="word_box_finger">
+               <h2 id="finger">Fingers</h2>
+            </div>
+            <div class="word_box_toes" >
+               <h2 id="toes">Toes</h2>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
